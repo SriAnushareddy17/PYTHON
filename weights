@@ -1,0 +1,9 @@
+n=int(input())
+for _i in range(n):
+    x,y,z,w=map(int,input().split())
+    if(x==y+z or x==z+w or x==y+w or x==y+z+w):
+        print("yes")
+    elif(x==y or x==z or x==w):
+        print("yes")
+    else:
+        print("no")
